@@ -1,19 +1,27 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package stax_basics;
 
-/**
- *
- * @author Marek
- */
+import bookreaders.Dom;
+import bookreaders.Sax;
+import exceptions.ReaderException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 public class Stax_basics {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //System.out.println(new File("resources/books.xml").exists());
+        try {
+            //Dom dom = new Dom();
+            //dom.parse(new FileInputStream(new File("resources/books.xml")));
+           
+            Sax sax = new Sax();
+            sax.parse(new FileInputStream(new File("resources/books.xml")));
+        } catch (ReaderException ex) {
+            System.out.println(ex.getMessage());
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }

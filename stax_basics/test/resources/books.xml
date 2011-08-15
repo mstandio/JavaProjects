@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BookCatalogue xmlns="http://www.publishing.org">
+      <Book>
+            <Title>Yogasana Vijnana: the Science of Yoga</Title>
+            <Cost currency="INR">11.50</Cost>
+      </Book>
+      <Book>
+            <Title>The First and Last Freedom</Title>
+            <Cost currency="USD">2.95</Cost>
+      </Book>
+</BookCatalogue>
